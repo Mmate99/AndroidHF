@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RatingActivity">
+
+    <TextView
+        android:id="@+id/tv_r_nev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        tools:text="Citadella"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:id="@+id/tv_r_varos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_r_nev"
+        android:layout_centerHorizontal="true"
+        tools:text="Budapest"
+        android:textStyle="italic"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_szoveg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_r_varos"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="@string/szoveg1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <RadioGroup
+        android:id="@+id/rg_Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_szoveg1">
+
+        <RadioButton
+            android:id="@+id/rb_NagyonJo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rb1"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_ElegJo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb2"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_Semleges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb3"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_SohaTobbet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb4"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_szoveg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_Rating"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="4dp"
+        android:text="@string/nev"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_Nev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_below="@+id/tv_szoveg2"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/opcionalis"/>
+
+    <TextView
+        android:id="@+id/tv_szoveg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Nev"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="@string/ertekeles"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_Ertekeles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_szoveg3"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:minLines="4"
+        android:gravity="top"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/opcionalis"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/et_Ertekeles">
+
+        <Button
+            android:id="@+id/btn_mentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="@string/mentes"
+            android:background="@drawable/custom_button"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_megse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="@string/megse"
+            android:background="@drawable/custom_button"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

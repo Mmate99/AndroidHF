@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Utazási Kisokos</string>
+    <string name="kereses">Keresés - Város vagy Látványosság név</string>
+    <string name="kereses_kep_leiras">Keresés ikon</string>
+    <string name="ertekeles_cim">Értékelés</string>
+    <string name="opcionalis">Opcionális</string>
+    <string name="ertekeles">Értékelés</string>
+    <string name="nev">Név</string>
+    <string name="mentes">Mentés</string>
+    <string name="megse">mégse</string>
+    <string name="szoveg1">Milyennek találta a látványosságot?</string>
+    <string name="rb1">Nagyon jó</string>
+    <string name="rb2">Elég jó</string>
+    <string name="rb4">Soha többet</string>
+    <string name="rb3">Semleges</string>
+    <string name="desc">Kép...</string>
+</resources>

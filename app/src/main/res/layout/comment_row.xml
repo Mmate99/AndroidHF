@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_comment_szoveg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="15dp"
+        android:justificationMode="inter_word"
+        android:textColor="@android:color/black"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ipsum orci, malesuada eu dictum quis, accumsan ac mauris. Proin eget eleifend nisl. Maecenas iaculis porttitor leo et rhoncus. Morbi cursus euismod sapien. Nam elementum consectetur enim. Cras euismod ut tellus ac tempor. Nullam laoreet ultricies leo nec ornare. Quisque facilisis ante sed dictum imperdiet. Duis convallis libero sit amet aliquet luctus. Aliquam eget urna vitae quam congue fermentum eu a ante."/>
+
+    <TextView
+        android:id="@+id/tv_comment_nev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="end"
+        android:textStyle="italic"
+        tools:text="-Kis Pista"/>
+
+</LinearLayout>

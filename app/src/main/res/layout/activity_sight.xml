@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SightActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/s_im"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                tools:src="@drawable/citadella"
+                android:contentDescription="@string/desc" />
+
+            <TextView
+                android:id="@+id/s_nev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s_im"
+                android:layout_centerHorizontal="true"
+                tools:text="Citadella"
+                android:textColor="@android:color/black"
+                android:textSize="40sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/s_varos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s_nev"
+                android:layout_centerHorizontal="true"
+                tools:text="Budapest"
+                android:textStyle="italic"
+                android:textSize="20sp"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/s_chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/s_varos">
+            </com.github.mikephil.charting.charts.PieChart>
+
+            <LinearLayout
+                android:id="@+id/comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s_chart"
+                android:orientation="vertical"
+                android:layout_marginBottom="75dp"/>        <!--Floating button ne takarja ki az utolsó komment szövegét-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_add_black"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
